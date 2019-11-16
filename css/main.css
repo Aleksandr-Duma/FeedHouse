@@ -101,16 +101,13 @@ body {
   text-decoration: none;
 }
 .logo-main {
-<<<<<<< HEAD
   width: 290px;
-=======
   width: 200px;
 }
 @media (min-width: 700px) {
   .logo-main {
     width: 290px;
   }
->>>>>>> mobile_version
 }
 .block-link {
   width: 100%;
