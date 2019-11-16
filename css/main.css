@@ -114,6 +114,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 @media (min-width: 700px) {
   .block-link {
@@ -127,6 +130,9 @@ body {
             justify-content: flex-end;
     padding-top: 7px;
     padding-right: 33px;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
   }
 }
 .link-navigation {
@@ -136,21 +142,41 @@ body {
   font-size: 14px;
   line-height: 1.2;
   color: #232834;
-  margin-left: 34px;
+  margin-bottom: 10px;
+}
+@media (min-width: 700px) {
+  .link-navigation {
+    margin-left: 34px;
+    margin-bottom: 0;
+  }
 }
 .block-log-in {
-  width: 27%;
+  width: 100%;
+  border: 1px solid orange;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 2px;
-  padding-right: 2px;
+}
+@media (min-width: 700px) {
+  .block-log-in {
+    width: 27%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-top: 2px;
+    padding-right: 2px;
+  }
 }
 .button-log-in {
   text-decoration: none;
@@ -177,10 +203,21 @@ body {
   font-size: 16px;
   line-height: 1.2;
   color: #232834;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+@media (min-width: 700px) {
+  .button-log-in {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
 }
 .language-block {
   width: 122px;
   height: 20px;
+  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,7 +228,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-left: 8px;
+  margin-bottom: 10px;
 }
 .language-block:after {
   content: "";
@@ -202,6 +239,12 @@ body {
   position: absolute;
   top: 2px;
   left: 57px;
+}
+@media (min-width: 700px) {
+  .language-block {
+    margin-bottom: 0;
+    margin-left: 8px;
+  }
 }
 .language-block-item {
   width: 50%;
