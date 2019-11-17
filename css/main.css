@@ -391,10 +391,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 54px;
-  padding-right: 15px;
-  padding-bottom: 50px;
-  padding-left: 15px;
+  padding: 54px 15px 50px 15px;
   margin-bottom: 50px;
 }
 .block-top-offer-item {
@@ -414,10 +411,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 55px;
-  padding-right: 45px;
-  padding-bottom: 42px;
-  padding-left: 45px;
+  padding: 55px 45px 42px 45px;
 }
 .line-top {
   position: absolute;
@@ -480,6 +474,44 @@ body {
   position: absolute;
   bottom: -30px;
   left: 0;
+}
+/*--------------Block-payment-------------*/
+.block-payment {
+  height: 400px;
+  border: 1px solid green;
+}
+.wrap-payment-title {
+  border: 1px solid green;
+}
+.payment-title {
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 1.2;
+  color: #232834;
+  text-align: left;
+  margin: 0;
+}
+.payment-row {
+  width: 100%;
+  border: 1px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.payment-item-brand {
+  width: 255px;
+  height: 118px;
+  border-radius: 5px;
+  border: 1px solid #D5DDE3;
 }
 /*---------------Block-bottom-offer--------------*/
 .wrap-block-bottom-offer {
