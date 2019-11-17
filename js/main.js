@@ -16,9 +16,9 @@ $(document).ready(function(){
 	 	$(".owl-carousel").owlCarousel({
 	 		items: 1,
 	 		loop: true,
-	 		smartSpeed: 600,
-	 		autoplay: true,
-	 		autoplayTimeout: 5000
+	 		smartSpeed: 600
+	 		// autoplay: true,
+	 		// autoplayTimeout: 5000
 	 	});
 	});
 
