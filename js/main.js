@@ -12,6 +12,16 @@ $(document).ready(function(){
 		$(".language-block-item.ru").removeClass("active");
 	})
 
+	$(document).ready(function(){
+	 	$(".owl-carousel").owlCarousel({
+	 		items: 1,
+	 		loop: true,
+	 		smartSpeed: 600,
+	 		autoplay: true,
+	 		autoplayTimeout: 5000
+	 	});
+	});
+
 });
 
 	
