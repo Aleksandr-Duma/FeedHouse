@@ -35,16 +35,32 @@
 }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: -85px;
+  margin-top: -10px;
   position: relative;
   z-index: 10;
 }
 
+@media (min-width: 700px){
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: -85px;
+    position: relative;
+    z-index: 10;
+  }
+}
+
 .owl-theme .owl-dots {
   text-align: center;
-  margin-right: 1000px;
+  margin-right: 0;
   -webkit-tap-highlight-color: transparent;
   margin-bottom: 55px; 
+}
+
+@media (min-width: 700px){
+  .owl-theme .owl-dots {
+    margin-right: 1000px;
+    -webkit-tap-highlight-color: transparent;
+    margin-bottom: 55px; 
+  }
 }
 
 .owl-theme .owl-dots .owl-dot {

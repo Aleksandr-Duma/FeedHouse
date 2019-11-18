@@ -9,47 +9,89 @@
 .slider-item-block{
 	// border: 1px solid blue;
 	display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	@media (min-width: 700px){
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 .slider-main-left-part{
-	width: 52%;
+	width: 100%;
 	// border: 1px solid red;
-	padding-top: 75px;
-	padding-bottom: 160px;
-	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 30px;
+	text-align: center;
+	
+	@media (min-width: 700px){
+		width: 52%;
+		text-align: left;
+		padding-top: 75px;
+		padding-bottom: 160px;
+		padding-left: 15px;
+	}
 }
 
 .main-title{
 	font-family: 'montserrat', sans-serif;
 	font-weight: 700;
-	font-size: 55px;
-	line-height: 1.3;
+	font-size: 28px;
+	line-height: 1.2;
 	color: #232834;
-	text-align: left;
+	text-align: center;
 	margin: 0;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+
+	@media (min-width: 700px){
+		font-size: 55px;
+		line-height: 1.3;
+		text-align: left;
+		margin-bottom: 20px;
+	}
 }
 
 .title-discription{
 	// border: 1px solid red;
 	font-family: 'montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 1.67;
+	font-size: 16px;
+	line-height: 1.4;
 	color: #232834;
+	text-align: center;
 	margin: 0;
-	margin-bottom: 37px;
-	padding-right: 65px;
+	margin-bottom: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	@media (min-width: 700px){
+		font-size: 18px;
+		line-height: 1.67;
+		text-align: left;
+		padding-right: 65px;
+		padding-left: 0;
+		margin-bottom: 37px;
+	}
 }
 
 .title-discription.message-text{
-	padding-right: 170px;
-	margin-bottom: 67px;
+	// margin-bottom: 62px;
+
+	@media (min-width: 700px){
+		padding-right: 170px;
+		margin-bottom: 67px;
+	}
 }
 
 .title-discription.phone-text{
-	padding-right: 100px;
-	margin-bottom: 67px;
+	// margin-bottom: 57px;
+
+	@media (min-width: 700px){
+		padding-right: 100px;
+		margin-bottom: 67px;
+	}
 }
 
 .bold-text{
@@ -74,14 +116,20 @@
 
 .slider-main-right-part{
 	width: 48%;
+	height: 600px;
 	// border: 1px solid red;
 	position: relative;
+	display: none;
+
+	@media (min-width: 700px){
+		display: block;
+	}
 }
 
 .robot-img-slider{
 	position: absolute;
-	top: 33px;
-	left: -130px;
+	top: 31px;
+	left: -129px;
 }
 
 .partners-img-slider{
