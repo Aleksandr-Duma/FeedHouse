@@ -1,41 +1,73 @@
 /*-------------Advertising-bottom-offer-------------*/
 
 .advertising-bottom-offer{
-	// border: 1px solid green;
 	display: flex;
-	margin-bottom: 30px;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+
+	@media (min-width: 700px){
+		flex-direction: row;
+		margin-bottom: 30px;
+	}
 }
 
 .advertising-bottom-offer-left{
-	width: 45%;
+	width: 100%;
 	height: 100%;
-	// border: 1px solid blue;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	padding-top: 7px;
-	padding-right: 30px;
+
+	@media (min-width: 1000px){
+		width: 45%;
+		justify-content: flex-end;
+		padding-right: 30px;
+	}
 }
 
 .partners-advertis-img{
 	display: block;
-	width: 303px;
+	width: 200px;
+
+	@media (min-width: 900px){
+		width: 303px;
+	}
 }
 
 .advertising-bottom-offer-right{
-	width: 55%;
-	// border: 1px solid green;
-	padding-top: 113px;
-	padding-right: 170px;
-	padding-left: 17px;
+	width: 100%;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	@media (min-width: 400px){
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+
+	@media (min-width: 1000px){
+		width: 55%;
+		padding-top: 113px;
+		padding-right: 170px;
+		padding-left: 17px;
+	}
 }
 
 .advertising-bottom-offer-right-text{
 	font-family: 'montserrat', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.45;
 	color: #232834;
-	margin-bottom: 27px;
+	text-align: center;
+	margin-bottom: 15px;
+
+	@media (min-width: 700px){
+		font-size: 18px;
+		text-align: left;
+		margin-bottom: 27px;
+	}
 }
 
 .parther-house-link{

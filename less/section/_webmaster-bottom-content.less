@@ -1,42 +1,74 @@
 /*------------Webmaster-bottom-content------------*/
 
 .webmaster-bottom-content{
-	// border: 1px solid blue;
 	display: flex;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
+	flex-direction: column;
+	align-items: center;
+
+	@media (min-width: 700px){
+		flex-direction: row;
+  		padding-bottom: 10px;
+		margin-bottom: 20px;
+	}
 }
 
 .webmaster-bottom-content-left{
-	width: 50%;
+	width: 100%;
 	height: 100%;
-	// border: 1px solid red;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
-	padding-top: 50px;
-	padding-right: 32px;
+	align-items: center;
+	padding-top: 20px;
+
+	@media (min-width: 1000px){
+		width: 50%;
+		align-items: flex-end;
+		padding-top: 50px;
+		padding-right: 32px;
+	}
 }
 
 .webmaster-phone-img{
 	display: block;
-	width: 428px;
+	width: 280px;
+
+	@media (min-width: 900px){
+		width: 428px;
+	}
 }
 
 .webmaster-bottom-content-right{
-	width: 50%;
+	width: 100%;
 	height: 100%;
-	// border: 1px solid red;
-	padding-top: 127px;
-	padding-right: 110px;
-	padding-left: 34px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	@media (min-width: 400px){
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+
+	@media (min-width: 1000px){
+		width: 50%;
+		padding-top: 127px;
+		padding-right: 110px;
+		padding-left: 34px;
+	}
 }
 
 .webmaster-bottom-content-right-text{
 	font-family: 'montserrat', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.45;
 	color: #232834;
-	margin-bottom: 27px;
+	text-align: center;
+	margin-bottom: 15px;
+
+	@media (min-width: 700px){
+		font-size: 18px;
+		text-align: left;
+		margin-bottom: 27px;
+	}
 }

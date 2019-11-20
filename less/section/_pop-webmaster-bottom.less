@@ -1,45 +1,70 @@
 /*-------------- Pop-webmaster-bottom -------------*/
 
 .pop-webmaster-bottom{
-	// border: 1px solid green;
 	display: flex;
-	margin-bottom: 110px;
+	flex-direction: column;
+	align-items: center;
+
+	@media (min-width: 700px){
+		flex-direction: row;
+		margin-bottom: 110px;
+	}
 }
 
 .pop-webmaster-bottom-left{
-	width: 50%;
+	width: 100%;
 	height: 100%;
-	// border: 1px solid blue;
 	display: flex;
-	justify-content: flex-start;
-	padding-top: 5px;
-	padding-bottom: 70px;
-	padding-left: 82px;
+	justify-content: center;
+	padding-bottom: 20px;
+
+	@media (min-width: 1000px){
+		width: 50%;
+		justify-content: flex-start;
+		padding-top: 5px;
+		padding-bottom: 70px;
+	}
+
+	@media (min-width: 1200px){
+		padding-left: 82px;
+	}
 }
 
 .pop-webmaster-bottom-rectangle{
-	width: 360px;
-	height: 360px;
+	width: 300px;
+	height: 300px;
 	border-radius: 10px;
 	background-color: rgba(255, 255, 255, 0.5);
 	position: relative;
 	z-index: 1;
+
+	@media (min-width: 1000px){
+		width: 360px;
+		height: 360px;
+	}
 }
 
 .pop-webmaster-bottom-rectangle-2{
-	width: 360px;
-	height: 360px;
+	width: 300px;
+	height: 300px;
 	border-radius: 10px;
 	background: rgba(255, 255, 255, 0.8);
 	position: absolute;
-	top: 60px;
-	left: 80px;
+	top: 0;
+	left: 0;
 	z-index: 2;
+
+	@media (min-width: 1000px){
+		width: 360px;
+		height: 360px;
+		top: 60px;
+		left: 80px;
+	}
 }
 
 .pop-webmaster-bottom-rectangle-main{
-	width: 360px;
-	height: 360px;
+	width: 300px;
+	height: 320px;
 	border-radius: 10px;
 	background: #FFFFFF;
 	box-shadow: 0px 20px 150px #E5EBF2;
@@ -47,9 +72,16 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	top: 20px;
-	left: 45px;
+	top: 0;
+	left: 0;
 	z-index: 3;
+
+	@media (min-width: 1000px){
+		width: 360px;
+		height: 360px;
+		top: 20px;
+		left: 45px;
+	}
 }
 
 .hand-img{
@@ -60,26 +92,44 @@
 }
 
 .pop-webmaster-bottom-right{
-	width: 50%;
+	width: 100%;
 	height: 100%;
-	// border: 1px solid blue;
-	padding-top: 50px;
-	padding-right: 100px;
-	padding-left: 33px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+
+	@media (min-width: 400px){
+		padding-top: 25px;
+		padding-right: 25px;
+		padding-left: 25px;
+	}
+
+	@media (min-width: 1000px){
+		width: 50%;
+		padding-top: 50px;
+		padding-right: 100px;
+		padding-left: 33px;
+	}
 }
 
 .pop-webmaster-bottom-text{
 	font-family: 'montserrat', sans-serif;
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 1.45;
 	color: #232834;
-	margin-bottom: 27px;
+	text-align: center;
+	margin-bottom: 15px;
+
+	@media (min-width: 700px){
+		font-size: 18px;
+		text-align: left;
+		margin-bottom: 27px;
+	}
 }
 
 .red-link-webmaster{
 	text-decoration: none;
-	
 }
 
 .red-string{
